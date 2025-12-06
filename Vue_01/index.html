@@ -16,8 +16,10 @@
     </header>
     <section id="tasks">
         <h2>Tareas</h2>
-        <p>{{ tasksA }}</p> <!-- interpolacion, doble llave para mostrar el valor de la variable -->
-        <p>{{ tasksB }}</p>
+        <p>Estudiar <a :href="vuelink">Vue</a></p>
+        <!-- v-bind se usa para enlazar el valor de la variable con el atributo href -->
+        <!-- interpolacion, doble llave para mostrar el valor de la variable -->
+        <p>{{ changeTask() }}</p>
     </section>
 </body>
 

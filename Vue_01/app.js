@@ -3,6 +3,17 @@ const app = Vue.createApp({
         return {
             tasksA: 'Ir a la Playa',
             tasksB: 'Ir al Cine',
+            vuelink: 'https://vuejs.org'
+        }
+    },
+    methods: {
+        changeTask() {
+            const randomNumber = Math.random();
+            if (randomNumber < 0.5) {
+                return this.tasksA;
+            } else {
+                return this.tasksB;
+            }
         }
     }
 });
